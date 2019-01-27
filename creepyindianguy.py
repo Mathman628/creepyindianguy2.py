@@ -60,7 +60,7 @@ async def on_message(message):
     print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
     await client.process_commands(message)
 
-    if message.content.lower() == "bob.logout":
+    if message.content.lower() == "indianguy.logout":
         await client.close()
 
 
