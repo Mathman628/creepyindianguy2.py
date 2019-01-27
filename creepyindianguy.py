@@ -8,6 +8,7 @@ from itertools import cycle
 import youtube_dl
 import json
 import os
+import sys
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "bob.")
@@ -58,9 +59,6 @@ async def on_ready():
 @client.event
 async def on_message(message):
     print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
-
-    if message.content.lower() == "indianguy.logout":
-        await client.close()
 
     await client.process_commands(message)
     
@@ -239,6 +237,12 @@ async def queue(ctx, url):
 @client.command()
 async def member_count(message):
         message.channel.send(f"{mhs_server.member_count}")
+
+#Logout
+@client.command()
+async def logout():
+    await client.close()
+    sys.exit()
 
 
 #For the status cycler
