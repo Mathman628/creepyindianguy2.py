@@ -243,4 +243,4 @@ async def member_count(message):
 client.loop.create_task(change_status())
 
 #Bot's token
-client.run("TOKEN")
+client.run(os.getenv("TOKEN"))
