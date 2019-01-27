@@ -58,10 +58,12 @@ async def on_ready():
 @client.event
 async def on_message(message):
     print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
-    await client.process_commands(message)
 
     if message.content.lower() == "indianguy.logout":
         await client.close()
+
+    await client.process_commands(message)
+    
 
 
 #We need a way to allow and disallow reactions by the user (perhaps a command that switches it on and off)
