@@ -12,7 +12,7 @@ import os
 Client = discord.Client()
 client = commands.Bot(command_prefix = "bob.")
 client.remove_command('help')
-os.chdir(r'/home/lavie/code/creepyindianguy2.py/creepyindianguy.py') #NEED THE CORRECT PATH
+os.chdir(r'/home/lavie/code/creepyindianguy2.py') #NEED THE CORRECT PATH
 
 channelname = '519348806467321858'
 
@@ -243,4 +243,4 @@ async def member_count(message):
 client.loop.create_task(change_status())
 
 #Bot's token
-client.run(os.getenv("TOKEN"))
+client.run("NTMxMDQ1ODcxNDUwNzE4MjA5.Dy8t5w.B652sniK6qlPYuVaPqXfW8FSGE8")
