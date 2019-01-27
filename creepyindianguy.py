@@ -12,7 +12,7 @@ import os
 Client = discord.Client()
 client = commands.Bot(command_prefix = "bob.")
 client.remove_command('help')
-os.chdir(r'/home/lavie/code/creepyindianguy2.py') #NEED THE CORRECT PATH
+os.chdir(r'/home/lavie/code/creepyindianguy2.py/creepyindianguy.py') #NEED THE CORRECT PATH
 
 channelname = '519348806467321858'
 
